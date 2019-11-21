@@ -5,6 +5,7 @@ import { HeroService }  from '../hero.service';
 
 export class Hero {
   id: number;
+  category: string;
   name: string;
 }
 
@@ -29,7 +30,7 @@ export class HeroDetailComponent implements OnInit {
 
   getHero(): void {
     const id = +this.route.snapshot.paramMap.get('id');
-    this.heroService.getHero(id)
+    this.heroService.getHero(id + 1)
       .subscribe(hero => this.hero = hero);
   }
 
@@ -38,7 +39,7 @@ export class HeroDetailComponent implements OnInit {
   }
 
  save(): void {
-    this.heroService.updateHero(this.hero)
+    this.heroService.updateHero(this.hero as Hero)
       .subscribe(() => this.goBack());
   }
 }

@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "tslint ./src/**/*.ts -t verbose",
     "start:server": "json-server db.json --routes routes.json",
-    "start": "ng serve",
+    "start": "ng serve --proxy-config proxy.config.js",
     "test": "ng test",
     "build": "ng build --prod",
     "e2e:open": "cypress open",

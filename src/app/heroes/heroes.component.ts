@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
 import { HeroService } from '../hero.service';
 
 export class Hero {
   id: number;
+  category: string;
   name: string;
 }
 
@@ -23,7 +23,7 @@ export class HeroesComponent implements OnInit {
 
   getHeroes(): void {
     this.heroService.getHeroes()
-      .subscribe(heroes => this.heroes = heroes);
+      .subscribe(heroes => this.heroes = heroes as Hero[]);
   }
 
   add(name: string): void {

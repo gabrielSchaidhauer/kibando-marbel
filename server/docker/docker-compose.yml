@@ -1,0 +1,27 @@
+version: '3.4'
+services:
+  db:
+    image: 'postgres:10.8'
+    container_name: postgres-onvio
+    ports:
+      - '5432:5432'
+    environment:
+      - POSTGRES_PASSWORD=password
+
+  flyway-migrate:
+    image: flyway/flyway
+    entrypoint: ''
+    command:
+      - /bin/bash
+      - -c
+      - |
+        /flyway/flyway -url=jdbc:postgresql://db:5432/ -user=postgres -password=password -connectRetries=60 -locations=filesystem:/flyway/sql/setup migrate &&
+        /flyway/flyway -url=jdbc:postgresql://db:5432/herodb -user=postgres -password=password -connectRetries=60 -locations=filesystem:/flyway/sql/migrations migrate
+    volumes:
+      - ./db:/flyway/sql
+    depends_on:
+      - db
+
+volumes:
+  db-data:
+    driver: local
