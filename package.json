@@ -5,7 +5,7 @@
   "description": "Marbel Universe Wiki",
   "scripts": {
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "server:start": "json-server db.json --routes routes.json",
+    "start:server": "json-server db.json --routes routes.json",
     "start": "ng serve",
     "test": "ng test",
     "build": "ng build --prod",
