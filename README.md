@@ -1,35 +1,35 @@
 # Kibando Marbel Heroes
-Esta aplicação se trata de uma wiki das nossas revistas em quadrinhos (Não tem nada a ver com o Angular Heroes List nós juramos!).
+This application is a wiki of our comics (It has nothing to do with Angular Heroes List we swear).
 
 ## Um breve histórico
-Nosso time na Kibando desenvolveu a aplicação que existe até o momento, entretanto começamos a criar alguns testes e coisas do tipo e começamos a ter bastante dificuldades, por isso estamos contratando vocês. Precisamos criar algumas coisas novas e urgentes e que vamos descrever abaixo, mas queriamos pedir um favor (0800 hein!), nós criamos um teste usando cypress e ele está falhando e não sabemos porquê, conseguem ver pra nós antes de começar?
+Our team at Marbel Comics developed the current application, however we started to create some tests and we are strugling with it. Because of that we are hiring you guys. We need to create some new and urgent stuff and we believe we have a few bugs so we need to test the stories we have been doing. Buuuut, we need to ask a favor. We have created some tests using cypress and one of then is failing. Can you help us to fix it before we start? It's going to be free of charge of course (a professional courtesy);
 
 ## User Stories
-Aqui são listadas as novas features que estamos precisando (Pra ontem!!!!)
+Here are listed a few things that we used to create our features (We learned how to write then with our Project Manager)
 
-### Exibição de imagem do personagem
-Eu, como diretor da Marbel Comics
-Quero ver a imagem dos meus personagens 
-Pois acho que são bonitas
+### Hero Listing
+We as core team need to see the heroes so we show them to our users.
 
-### Remoção de Mensagens
-Eu como usuário do website 
-Gostaria de não ver informações estranhas no website
-Pois eu não entendo elas
+### Hero Creation
+As Users we need to be able to create new users.
 
-### Adição de Categorias
-Jorginho, gerente do marketing 
-Preciso que os heróis tenham categorias (ex: Mutante)
-Pois isso vende mais
+### Hero Editing
+As the head of the company I want the heroes to be able to change names.
+
+### Hero search
+As Marketing head I need to be able to filter heroes by it's name.
+
+### Heroes deletion
+As users we need to be able to delete heroes
+
+### Heroes top list
+As Marketing head I need to see the top heroes on my dashboard
+
+Ok Guys, this is it. We need to cover the main flows of this User Stories cause I'll be firing the testers soon ok? Take a look at the code too, there is some things that may not be smelling good there. 
 
 
+Thank you!
 
-
-Beleza pessoal é isso aí, o ideal é que os fluxos principais da aplicação tenham testes em tudo, pois eu vou demitir os testers depois beleza? E deem uma melhorada no código tambem, tem uma ou duas coisas que me disseram que não tá lá essas coisas. 
-
-
-Obrigado!
-
-Att. Vandercleidson Jr.
-CEO Grupo Kibando
+Vandercleidson Jr.
+CEO Kibando Group
 CEO Marbel Comics
