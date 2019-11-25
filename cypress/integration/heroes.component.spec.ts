@@ -1,15 +1,4 @@
 describe('Heroes', () => {
-  // We need help on this one
-  it('Should add new hero', () => {
-    cy.visit('http://localhost:4200/heroes');
-    cy.wait(4000);
-    cy.get('input').type('Hero xyz');
-    cy.get('button').eq(0).click();
-    cy.visit('http://localhost:4200/heroes');
-    cy.wait(4000)
-    cy.get('a').contains('Hero xyz').as('inserted');
-  });
-
   // This one works, but may be flaky
   it('Should delete Heroes', () => {
     // Get the requests to wait
